@@ -23,6 +23,8 @@
 				onclick="if(!confirm('¿Está seguro?')) return false">Cerrar sesión</button>
 		</form:form>
 	</header>
+	<div class="cls-background">
+	</div>
 	<h1>Sección Administrativa</h1>
 	<h3>Esta página es sólo para administradores</h3>
 	<textarea rows="100"><c:import url="/resources/txt/loremipsum.txt" />
@@ -34,23 +36,5 @@
 				class="btn btn-outline-primary">Sección Editorial</a>
 		</sec:authorize>
 	</footer>
-<!-- 
-	<div class="container">
-		<h1>Sección Administrativa</h1>
-		<h3>Esta página es sólo para administradores</h3>
-		<p>
-			Usuario:
-			<sec:authentication property="principal.username" />
-		</p>
-		<p>
-			Roles:
-			<sec:authentication property="principal.authorities" />
-		</p>
-		<form:form action="${pageContext.request.contextPath}/logout" method="POST">
-			<button type="submit" class="btn btn-warning">Salir</button>
-			<a href="${pageContext.request.contextPath}/" class="btn btn-outline-primary">Colaboradores</a>
-		</form:form>
-	</div>
-	-->
 </body>
 </html>

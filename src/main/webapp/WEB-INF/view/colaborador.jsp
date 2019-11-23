@@ -23,6 +23,8 @@
 				onclick="if(!confirm('¿Está seguro?')) return false">Cerrar sesión</button>
 		</form:form>
 	</header>
+	<div class="cls-background">
+	</div>
 	<h1>Hola <sec:authentication property="principal.username" /></h1>
 	<textarea rows="100"><c:import url="/resources/txt/loremipsum.txt" />
 	</textarea>
