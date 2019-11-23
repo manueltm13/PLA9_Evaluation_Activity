@@ -29,11 +29,20 @@ header>p{
     font-style: italic;
 }
 
-header>.btn-group{
+header>.btn-group, 
+header button[type=submit]{
     margin-top: 5px;
     top: 0;
     position: absolute;
     right: 5px;
+}
+
+header>.btn-group.btn-login>button{
+	color: white;
+}
+
+header>.btn-group.btn-login.show>button{
+	color: transparent;
 }
 
 header .dropdown-menu{
@@ -98,8 +107,16 @@ body>textarea{
 	margin-left: 6em;
 }
 
+.cls-rol>h1{
+	margin: 1em;
+}
+
 footer{
 	position: fixed;
 	bottom: 0;
 	padding-left: 1em;
+}
+
+.cls-rol footer{
+	background-color: beige;
 }
