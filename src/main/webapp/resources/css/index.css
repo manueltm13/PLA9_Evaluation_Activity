@@ -7,7 +7,10 @@ body{
 }
 
 header{
-	height: 3em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 4em;
 	border-bottom: 1px solid gray;
 	background: linear-gradient(45deg, rgba(5,134,163,1) 0%, rgba(117,189,209,1) 51%, rgba(234,236,237,1) 100%);
 	text-align: center;
@@ -15,7 +18,7 @@ header{
 
 header>img{
 	position: absolute;
-	height: 3em;
+	height: 100%;
     left: 5px;
 }
 
@@ -27,14 +30,14 @@ header>p{
     vertical-align: top;
     color: white;
     font-style: italic;
+    line-height: 2em;
 }
 
 header>.btn-group, 
-header button[type=submit]{
-    margin-top: 5px;
-    top: 0;
-    position: absolute;
-    right: 5px;
+header form#command{
+    float: right;
+    margin-top: .7em;
+    margin-right: 1em;
 }
 
 header>.btn-group.btn-login>button{
@@ -51,6 +54,7 @@ header .dropdown-menu{
 
 section{
 	display: flex;
+	margin-top: 4em;
 }
 
 section>img{
@@ -107,8 +111,13 @@ body>textarea{
 	margin-left: 6em;
 }
 
-.cls-rol>h1{
-	margin: 1em;
+.cls-rol>h1:first-of-type{
+	margin: 3em 1em 1em;
+}
+
+.cls-rol>h3:first-of-type{
+	margin-left: 1em;
+    margin-bottom: 1em;
 }
 
 footer{

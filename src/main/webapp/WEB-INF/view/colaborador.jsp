@@ -36,33 +36,5 @@
 				class="btn btn-outline-primary">Sección Administrativa</a>
 		</sec:authorize>
 	</footer>
-
-<!-- 
-	<div class="container">
-		<h1>Hola que tal</h1>
-		<p>
-			Usuario:
-			<sec:authentication property="principal.username" />
-		</p>
-		<p>
-			Roles:
-			<sec:authentication property="principal.authorities" />
-		</p>
-		
-		<p></p>
-		<form:form action="${pageContext.request.contextPath}/logout"
-			method="POST">
-			<button type="submit" class="btn btn-warning">Salir</button>
-			<sec:authorize access="hasRole('EDITOR')">
-				<a href="${pageContext.request.contextPath}/editor/"
-					class="btn btn-outline-primary">Sección Editorial</a>
-			</sec:authorize>
-			<sec:authorize access="hasRole('ADMINISTRADOR')">
-				<a href="${pageContext.request.contextPath}/administrador/"
-					class="btn btn-outline-primary">Sección Administrativa</a>
-			</sec:authorize>
-		</form:form>
-	</div>
--->
 </body>
 </html>
